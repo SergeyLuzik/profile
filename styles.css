@@ -16,7 +16,10 @@
     rgba(3, 56, 244, 0.71) 0%,
     rgba(244, 37, 206, 0.79) 94%
   );
-  --corner-radius: 10px;
+  --br-s: 4px;
+  --br-m: 10px;
+
+  --regular-font: 400;
   --bold-font: 700;
 }
 
@@ -34,7 +37,8 @@ a[class] {
 p[class],
 h1[class],
 h2[class],
-h3[class] {
+h3[class],
+h4[class] {
   margin-block: 0;
 }
 
@@ -90,7 +94,7 @@ body {
   flex-direction: column;
   gap: 24px;
   padding: 32px;
-  border-radius: var(--corner-radius);
+  border-radius: var(--br-m);
   background-color: var(--aside-bg-color);
 }
 
@@ -119,7 +123,7 @@ body {
   flex-direction: column;
   gap: 8px;
   padding: 16px;
-  border-radius: var(--corner-radius);
+  border-radius: var(--br-m);
   background-color: var(--aside-block-bg-color);
 }
 
@@ -142,7 +146,7 @@ body {
   align-items: center;
   color: var(--lite-color);
   padding: 8px 16px;
-  border-radius: var(--corner-radius);
+  border-radius: var(--br-m);
   background-color: var(--aside-block-bg-color);
   line-height: 16px;
 }
@@ -209,6 +213,74 @@ body {
   flex-direction: column;
   gap: 24px;
   padding: 32px 14px;
-  border-radius: var(--corner-radius);
+  border-radius: var(--br-m);
   background-color: var(--info-bg-color);
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.main__section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 164px;
+  padding-block: 3px;
+  border-radius: var(--br-s);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: var(--bold-font);
+  color: var(--lite-color);
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+}
+
+.main__section-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 12px;
+  left: 164px;
+  width: calc(100% - 164px);
+  height: 1px;
+  background-color: var(--accent-color);
+}
+
+.main__section-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: var(--bold-font);
+  color: var(--darker-color);
+}
+
+.main__section-subsubtitle {
+  font-weight: var(--regular-font);
+  line-height: 16px;
+  color: var(--darker-color);
+}
+
+.main__section-text {
+  color: var(---base-color);
+  line-height: 16px;
+}
+
+.main__section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workplaces__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.date-range {
+  line-height: 16px;
+  color: var(--lighter-color);
 }
