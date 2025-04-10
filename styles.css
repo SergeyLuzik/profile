@@ -16,6 +16,7 @@
     rgba(3, 56, 244, 0.71) 0%,
     rgba(244, 37, 206, 0.79) 94%
   );
+  --corner-radius: 10px;
 }
 
 *,
@@ -41,6 +42,19 @@ img {
   max-width: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Play", sans-serif;
   font-weight: 400;
@@ -52,4 +66,31 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+  max-width: 1300px;
+  min-width: 1000px;
+  margin: 16px auto;
+  padding-inline: 16px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: var(--corner-radius);
+  background-color: var(--aside-bg-color);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 14px;
+  border-radius: var(--corner-radius);
+  background-color: var(--info-bg-color);
 }
