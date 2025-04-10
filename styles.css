@@ -17,6 +17,7 @@
     rgba(244, 37, 206, 0.79) 94%
   );
   --corner-radius: 10px;
+  --bold-font: 700;
 }
 
 *,
@@ -28,6 +29,13 @@
 a[class] {
   text-decoration: none;
   color: inherit;
+}
+
+p[class],
+h1[class],
+h2[class],
+h3[class] {
+  margin-block: 0;
 }
 
 ul[class],
@@ -84,6 +92,116 @@ body {
   padding: 32px;
   border-radius: var(--corner-radius);
   background-color: var(--aside-bg-color);
+}
+
+.person__avatar {
+  border-radius: 50%;
+}
+
+.person__name {
+  font-size: 24px;
+  color: var(--accent-lighten-color);
+}
+
+.person__birthplace {
+  font-size: 36px;
+  color: var(--lite-color);
+}
+
+.person__description {
+  font-size: 24px;
+  font-weight: var(--bold-font);
+  color: var(--accent-lighten-color);
+}
+
+.aside__section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border-radius: var(--corner-radius);
+  background-color: var(--aside-block-bg-color);
+}
+
+.aside__section-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: var(--bold-font);
+  color: var(--lite-color);
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  color: var(--lite-color);
+  padding: 8px 16px;
+  border-radius: var(--corner-radius);
+  background-color: var(--aside-block-bg-color);
+  line-height: 16px;
+}
+
+.contacts__item::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contacts__item--email::before {
+  background-image: url("./assets/icons/email.svg");
+}
+
+.contacts__item--phone::before {
+  background-image: url("./assets/icons/phone.svg");
+}
+
+.contacts__item--site::before {
+  background-image: url("./assets/icons/website.svg");
+}
+
+.contacts__item--location::before {
+  background-image: url("./assets/icons/location.svg");
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.specialization__item {
+  color: var(--second-lite-color);
+  line-height: 16px;
+  list-style: disc;
+  margin-left: 16px;
+}
+
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--second-lite-color);
+  line-height: 18px;
+}
+
+.socials__list {
+  margin-block: 0;
+  line-height: 16px;
+  color: var(--lite-color);
+}
+
+.socials__name,
+.socials__nickname {
+  list-style: disc;
+  display: inline;
+  margin-left: 0;
 }
 
 .main {
