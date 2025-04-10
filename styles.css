@@ -1,0 +1,27 @@
+:root {
+  --base-color: rgba(0, 0, 0, 0.8);
+  --lite-color: #ffffff;
+  --second-lite-color: #fafafa;
+  --darker-color: #343434;
+  --lighter-color: #73808d;
+  --second-lighten-color: #e7e7e7;
+  --accent-lighten-color: #cecaca;
+  --accent-color: #545454;
+  --second-accent-color: #3b5999;
+  --info-bg-color: #ffffff;
+  --aside-bg-color: rgba(196, 196, 196, 0.3);
+  --aside-block-bg-color: rgba(196, 196, 196, 0.35);
+  --page-bg-gradient: linear-gradient(
+    to bottom,
+    rgba(3, 56, 244, 0.71) 0%,
+    rgba(244, 37, 206, 0.79) 94%
+  );
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background: var(--page-bg-gradient);
+}
