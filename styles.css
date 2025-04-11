@@ -286,6 +286,25 @@ body {
   color: var(--lighter-color);
 }
 
+.radials {
+  display: flex;
+  gap: 16px;
+}
+
+.radial {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 4px;
+  width: 100px;
+}
+
+.radial__title {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--accent-color);
+}
+
 .radial__info {
   position: relative;
   display: flex;
@@ -297,7 +316,7 @@ body {
   background: radial-gradient(var(--second-lighten-color) 55%, transparent 57%),
     conic-gradient(
       var(--radial-color) 0% var(--p),
-      transparent calc(var(--p) + 1%) 100%
+      transparent calc(var(--p) + 0.5%) 100%
     );
   line-height: 18px;
   font-weight: var(--bold-font);
