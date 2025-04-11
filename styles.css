@@ -71,6 +71,8 @@ img {
 html,
 body {
   min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -79,8 +81,6 @@ body {
   font-style: normal;
   font-size: 14px;
   background: var(--page-bg-gradient);
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -88,8 +88,9 @@ body {
   gap: 32px;
   max-width: 1300px;
   min-width: 724px;
-  margin: 16px auto;
-  padding-inline: 16px;
+  min-height: 100vh;
+  margin-inline: auto;
+  padding: 16px;
 }
 
 .aside {
@@ -129,6 +130,12 @@ body {
   font-size: 24px;
   font-weight: var(--bold-font);
   color: var(--accent-lighten-color);
+}
+
+.aside__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .aside__section {
@@ -197,7 +204,7 @@ body {
   color: var(--second-lite-color);
   line-height: 16px;
   list-style: disc;
-  margin-left: 16px;
+  margin-left: 22px;
 }
 
 .languages__list {
@@ -210,11 +217,14 @@ body {
 
 .languages__item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .languages__item::after {
+  position: relative;
+  top: -2px;
   content: "●●●●●";
-  letter-spacing: 1px;
+  font-size: 19px;
   background: linear-gradient(
     to right,
     var(--accent-color) var(--p),
@@ -232,9 +242,10 @@ body {
 }
 
 .socials__name {
+  padding-left: 7px;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
 }
 
 .socials__name::before {
