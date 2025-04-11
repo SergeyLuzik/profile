@@ -86,7 +86,8 @@ body {
 .container {
   display: flex;
   gap: 32px;
-  max-width: 1300px;
+  width: 64.16%;
+  max-width: 1332px;
   min-width: 724px;
   min-height: 100vh;
   margin-inline: auto;
@@ -94,7 +95,7 @@ body {
 }
 
 .aside {
-  width: 34.72%;
+  width: 36.81%;
   min-width: 330px;
   display: flex;
   flex-direction: column;
@@ -258,7 +259,7 @@ body {
 }
 
 .main {
-  width: 65.28%;
+  width: 63.18%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -309,7 +310,8 @@ body {
 
 .main__section-subsubtitle {
   font-weight: var(--regular-font);
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   color: var(--darker-color);
 }
 
