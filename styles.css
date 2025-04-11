@@ -295,7 +295,10 @@ body {
   height: 56px;
   border-radius: 50%;
   background: radial-gradient(var(--second-lighten-color) 55%, transparent 57%),
-    conic-gradient(var(--radial-color) 0% 95%, transparent 96% 100%);
+    conic-gradient(
+      var(--radial-color) 0% var(--p),
+      transparent calc(var(--p) + 1%) 100%
+    );
   line-height: 18px;
   font-weight: var(--bold-font);
   color: var(--accent-color);
