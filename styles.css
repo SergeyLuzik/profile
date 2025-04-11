@@ -11,6 +11,7 @@
   --info-bg-color: #ffffff;
   --aside-bg-color: rgba(196, 196, 196, 0.3);
   --aside-block-bg-color: rgba(196, 196, 196, 0.35);
+  --radial-color: #3b5999;
   --page-bg-gradient: linear-gradient(
     to bottom,
     rgba(3, 56, 244, 0.71) 0%,
@@ -283,4 +284,19 @@ body {
 .date-range {
   line-height: 16px;
   color: var(--lighter-color);
+}
+
+.radial__info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(var(--second-lighten-color) 55%, transparent 57%),
+    conic-gradient(var(--radial-color) 0% 95%, transparent 96% 100%);
+  line-height: 18px;
+  font-weight: var(--bold-font);
+  color: var(--accent-color);
 }
