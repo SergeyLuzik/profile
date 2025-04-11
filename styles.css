@@ -214,10 +214,18 @@ body {
   color: var(--lite-color);
 }
 
-.socials__name,
+.socials__name {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials__name::before {
+  content: "●";
+  font-size: 10px;
+}
 .socials__nickname {
-  list-style: disc;
-  display: inline;
+  display: inline-block;
   margin-left: 0;
 }
 
