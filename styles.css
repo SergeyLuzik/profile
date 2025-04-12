@@ -3,6 +3,7 @@
   --lite-color: #ffffff;
   --second-lite-color: #fafafa;
   --darker-color: #343434;
+  --second-darker-color: rgba(84, 84, 84, 0.6);
   --lighter-color: #73808d;
   --second-lighten-color: #e7e7e7;
   --accent-lighten-color: #cecaca;
@@ -262,7 +263,7 @@ body {
   font-size: 19px;
   background: linear-gradient(
     to right,
-    var(--accent-color) var(--p),
+    var(--second-darker-color) var(--p),
     var(--accent-lighten-color) var(--p)
   );
   -webkit-background-clip: text;
